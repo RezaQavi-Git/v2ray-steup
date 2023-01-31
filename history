@@ -1,0 +1,146 @@
+    1  wget static.tapsi.test
+    2  wget http://static.tapsi.tech/test.rar
+    3  wget http:/static.tapsi.cab/test.rar
+    4  wget https://static.tapsi.cab/test.rar
+    5  ls
+    6  rm test.rar 
+    7  df /
+    8  htop
+    9  ls
+   10  cd /root/
+   11  ls
+   12  apt install nano
+   13  nano config.json
+   14  docker run -d --restart always --log-driver=none --network host -e V2RAY_VMESS_AEAD_FORCED=false -v /root/config.json:/etc/v2ray/config.json:ro v2fly/v2fly-core run -config /etc/v2ray/config.json
+   15  sudo apt-get update
+   16  sudo apt-get upgrade
+   17  apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+   18  apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+   19  docker run hello-world
+   20  apt install docker
+   21  docker run hello-world
+   22  apt install docker
+   23  apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+   24  sudo apt-get update
+   25  sudo apt-get install     ca-certificates     curl     gnupg     lsb-release
+   26  sudo mkdir -p /etc/apt/keyrings
+   27  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   28  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+   29    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   30  sudo apt-get update
+   31  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+   32  docker run hello-world
+   33  cd /root/
+   34  ls
+   35  docker run -d --restart always --log-driver=none --network host -e V2RAY_VMESS_AEAD_FORCED=false -v /root/config.json:/etc/v2ray/config.json:ro v2fly/v2fly-core run -config /etc/v2ray/config.json
+   36  exit
+   37  apt install speedtest-cli
+   38  speedtest-cli --simple
+   39  ls
+   40  speedtest-cli 
+   41  mtr shatel.ir -n
+   42  apt install mtr
+   43  mtr shatel.ir -n
+   44  qqq
+   45  mtr shatel.ir -n
+   46  q
+   47  speedtest-cli 
+   48  docker ps
+   49  cd /etc/
+   50  ll
+   51  cd ssh
+   52  ll
+   53  cat ssh_config
+   54  cd ssh_config.d/
+   55  ls
+   56  ll
+   57  cd ../
+   58  ll
+   59  cat sshd_config
+   60  ss -tulpn | grep 1026
+   61  ss -tulpn | grep 22
+   62  ss -tulpn | grep 3306
+   63  sudo nano /etc/ssh/sshd_config
+   64  sudo ufw allow 3306/tcp
+   65  apt install ufw
+   66  sudo ufw allow 3306/tcp
+   67  cat sshd_config
+   68  cat /etc/default/ufw 
+   69  sudo systemctl restart ssh
+   70  ss -tulpn | grep 3306
+   71  ls
+   72  cat config.json 
+   73  sudo nano com_config.json 
+   74  docker run -d --restart always --log-driver=none --network host -e V2RAY_VMESS_AEAD_FORCED=false -v /root/com_config.json:/etc/v2ray/config.json:ro v2fly/v2fly-core run -config /etc/v2ray/config.json
+   75  ss -tulpn | grep 81
+   76  ss -tulpn | grep 80
+   77  sudo nano ir_config.json 
+   78  docker run -d --restart always --log-driver=none --network host -e V2RAY_VMESS_AEAD_FORCED=false -v /root/ir_config.json:/etc/v2ray/config.json:ro v2fly/v2fly-core run -config /etc/v2ray/config.json
+   79  ls
+   80  sudo nano trojan.json
+   81  apt install certbot
+   82  certbot certonly --manual  --preferred-challenges dns-01 -d "nickwidle.zotopia.ir"
+   83  cd /etc/letsencrypt/archive/nickwidle.zotopia.ir/
+   84  ls
+   85  cp privkey1.pem ~/
+   86  cp fullchain1.pem ~/
+   87  ls
+   88  cd
+   89  ls
+   90  cat trojan.json 
+   91  ls
+   92  sudo nano trojan.json 
+   93  sudo nano trojan.json
+   94  ls
+   95  history 
+   96  cd /etc/letsencrypt/archive/nickwidle.zotopia.ir/
+   97  ls
+   98  docker run -d --restart always --log-driver=json-file --network host -e V2RAY_VMESS_AEAD_FORCED=false -v /root/trojan.json:/etc/v2ray/config.json:ro -v /cert/privkey1.pem:/etc/v2ray/v2ray.crt:ro -v /root/fullchain1.pem:/etc/v2ray/v2ray.key:ro v2fly/v2fly-core run -config /etc/v2ray/config.json
+   99  cd
+  100  docker run -d --restart always --log-driver=json-file --network host -e V2RAY_VMESS_AEAD_FORCED=false -v /root/trojan.json:/etc/v2ray/config.json:ro -v /cert/privkey1.pem:/etc/v2ray/v2ray.crt:ro -v /root/fullchain1.pem:/etc/v2ray/v2ray.key:ro v2fly/v2fly-core run -config /etc/v2ray/config.json
+  101  docker stop 2c52b3d6a8d01d3421370030f545ef7d96f9fd46411b0a9dcd0a461d60eef617
+  102  docker stop 6966a86350130b1f840a8089d823867ce324017f9c5eafca6ce96f1b6b4094fa
+  103  docker ps
+  104  docker run -d --restart always --log-driver=json-file --network host -e V2RAY_VMESS_AEAD_FORCED=false -v /root/trojan.json:/etc/v2ray/config.json:ro -v /cert/privkey1.pem:/etc/v2ray/v2ray.crt:ro -v /root/fullchain1.pem:/etc/v2ray/v2ray.key:ro v2fly/v2fly-core run -config /etc/v2ray/config.json
+  105  docker logs 60cc4d7bcc651fd73e31398f72649b816e9ce1377652b708d02bd8031a9634cf
+  106  docker ps
+  107  docker stop 60cc4d7bcc65
+  108  sudo nano trojan.json
+  109  docker run -d --restart always --log-driver=json-file --network host -v /root/trojan.json:/etc/v2ray/config.json:ro -v /root/privkey1.pem:/etc/v2ray/v2ray.crt:ro -v /root/fullchain1.pem:/etc/v2ray/v2ray.key:ro v2fly/v2fly-core run -config /etc/v2ray/config.json
+  110  docker ps
+  111  docker logs bedf61e82ff2
+  112  docker log bedf61e82ff2
+  113  docker logs bedf61e82ff2
+  114  docker ps
+  115  docker stop fff52bebb3fb
+  116  ocker run -d --restart always --log-driver=json-file\ --network host -v /root/trojan.json:/etc/v2ray/config.json:ro -v /root/privkey1.pem:/etc/v2ray/v2ray.crt:ro -v /root/fullchain1.pem:/etc/v2ray/v2ray.key:ro v2fly/v2fly-core run -config /etc/v2ray/config.json
+  117  \
+  118  ocker run -d --restart always --log-driver=json-file --network host -v /root/trojan.json:/etc/v2ray/config.json:ro -v /root/privkey1.pem:/etc/v2ray/v2ray.crt:ro -v /root/fullchain1.pem:/etc/v2ray/v2ray.key:ro v2fly/v2fly-core run -config /etc/v2ray/config.json
+  119  docker run -d --restart always --log-driver=json-file --network host -v /root/trojan.json:/etc/v2ray/config.json:ro -v /root/privkey1.pem:/etc/v2ray/v2ray.crt:ro -v /root/fullchain1.pem:/etc/v2ray/v2ray.key:ro v2fly/v2fly-core run -config /etc/v2ray/config.json
+  120  docker ps
+  121  docker logs 8528a1b4d9ef
+  122  watch docker logs 8528a1b4d9ef
+  123  ls
+  124  cat trojan.json
+  125  watch docker logs 8528a1b4d9ef
+  126  docker logs 8528a1b4d9ef
+  127  docker tail logs 8528a1b4d9ef
+  128  docker logs tail 8528a1b4d9ef
+  129  watch docker logs 8528a1b4d9ef
+  130  history 
+  131  ls
+  132  ll
+  133  ls
+  134  docker run -d --restart always --log-driver=json-file --network host -v /root/trojan.json:/etc/v2ray/config.json:ro -v /root/fullchain1.pem:/etc/v2ray/v2ray.crt:ro -v /root/privkey1.pem:/etc/v2ray/v2ray.key:ro v2fly/v2fly-core run -config /etc/v2ray/config.json
+  135  docker ps
+  136  docker stop 8528a1b4d9ef
+  137  docker ps
+  138  docker stop 75eecf4ff190
+  139  docker run -d --restart always --log-driver=none --network host -v /root/trojan.json:/etc/v2ray/config.json:ro -v /root/fullchain1.pem:/etc/v2ray/v2ray.crt:ro -v /root/privkey1.pem:/etc/v2ray/v2ray.key:ro v2fly/v2fly-core run -config /etc/v2ray/config.json
+  140  ls
+  141  history 
+  142  ls
+  143  cat com_config.json 
+  144  ls
+  145  cat trojan.json
+  146  history > 33.txt
