@@ -4,7 +4,7 @@
   },
   "inbounds": [
     {
-      "port": 81,
+      "port": 80,
       "protocol": "vmess",
       "allocate": {
         "strategy": "always"
@@ -24,7 +24,7 @@
         "network": "ws",
         "wsSettings": {
           "connectionReuse": true,
-          "path": "/kafsh"
+          "path": "/cookie"
         },
         "security": "none",
         "tcpSettings": {
